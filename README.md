@@ -10,7 +10,7 @@ A script that will play mini game in Blum for you, using your tickets and collec
 npm install blum-auto-play
 ```
 
-3. **Create a `index.js` file and paste the code:**
+2. **Create a `index.js` file and paste the code:**
 
 ```javascript
 import { play } from "blum-auto-play";
@@ -18,13 +18,13 @@ const authToken = "Bearer <your_token>";
 play(authToken);
 ```
 
-4. **Add your Bearer token:**
+3. **Add your Bearer token:**
 
    - Copy your Blum `Bearer token` and paste it in the `index.js` file.
   
 ## Receiving a Bearer token
 
-1. **Install the [`Resource Override`](https://chromewebstore.google.com/detail/resource-override/pkoacgokdfckfpndoffpifphamojphii?utm_source=ext_app_menu) extension for Chrome**
+1. **Install the (blum web) extension for Chrome**
 
 2. **Set up Resource Override:**
    - Click the `Add Rule` button and select `Change Headers`.
@@ -38,8 +38,6 @@ play(authToken);
    - Find your Bearer token in the request headers.
 
 4. **Copy your Bearer token and paste it into the index.js file.**
-
-![how to get Bearer token](./src/assets/token.jpg)
 
 ## Run the script:
 
@@ -60,8 +58,6 @@ play(authToken);
 ## Note:
 
 Once you have received the Bearer token, be sure to disable the Resource Override extension to avoid problems with other sites.
-
-![extension](./src/assets/resource.jpg)
 
 # Happy mining!
 
